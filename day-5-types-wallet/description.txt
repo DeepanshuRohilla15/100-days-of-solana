@@ -1,0 +1,11 @@
+# Exploring Different Wallet Types – Reflection
+
+In this challenge, I compared three different Solana wallet types: a CLI wallet, a browser wallet (Phantom), and a mobile wallet.
+
+The CLI wallet was the fastest and most convenient for development. Since the private key is stored in a local JSON file, I could easily use Solana CLI commands to check balances, request airdrops, and automate transactions. However, it felt the least secure because anyone with access to the keypair file could control the wallet.
+
+The browser wallet provided a much better balance between convenience and security. During setup, I created a password and received a recovery seed phrase. I also noticed that every transaction required approval through a confirmation popup, which helped me understand exactly what I was signing. This makes browser wallets a good choice for interacting with dApps during everyday development and testing.
+
+The mobile wallet felt the most secure among the wallets I tested because it supported device-level security features such as biometric authentication. The setup process was similar to the browser wallet, but the additional protection provided by the phone's secure storage made it feel safer. I was also able to transfer devnet SOL between wallets and verify the transaction successfully.
+
+From this comparison, I learned that all wallets manage the same underlying concept—a Solana keypair—but differ in how they store and protect private keys. For scripting and automated testing, I would choose a CLI wallet. For daily development and dApp interaction, I would use a browser wallet. For personal use and holding valuable assets, I would prefer a mobile wallet or, ideally, a hardware wallet such as a Ledger. The best wallet depends on the balance between convenience, security, and the specific use case.
